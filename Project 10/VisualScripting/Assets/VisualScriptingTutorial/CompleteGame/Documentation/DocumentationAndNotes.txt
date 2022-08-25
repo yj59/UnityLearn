@@ -1,0 +1,94 @@
+Level Editor Documentation
+========================================
+The Level Editor allows you to draw your own level. It is very basic and was made
+to simplify our work during production, so it lacks a lot of features (e.g. no
+undo support) but it can help you create your own level.
+
+To create your own level in the project, follow those steps :
+
+- Create a new Scene
+- Use the menu entry Tutorial > Create Level. This will :
+  - Add a Grid GameObject, and as a child of it, a Level GameObject with a Level component
+  - Change the MainCamera for the MainCamera prefab that handles camera movement
+
+You Scene view should now have a yellow square in the center. This is because
+right now your level spawn point (a green square) and your level end goal (a red
+square) are on the same cell of the level.
+
+To edit your level, you can use the Level Editor.
+
+It can be opened by using the menu entry Tutorial > Tools > Level Editor.
+
+The options you will be presented with are :
+
+- Ground :
+  "Draw" ground in your level. Moving your mouse around the scene 
+  view will show you a square outline following the mouse.
+  Clicking and dragging your mouse on empty spaces in the scene view will add 
+  ground cells. Walls are automatically created between ground cells and empty cells.
+  Clicking and dragging your mouse on a square with ground on it will remove it.
+- Walls:
+  This will display an elongated cube on the current edge between 2 cells.
+  Clicking on an empty edge will add a wall. Clicking on a wall will remove it.
+- Spawn Point and End Point :
+  Select which cell the player starts from, and which cell they
+  need to reach to finish the Level.
+- Cells Object section :
+  This allow to place object that occupy a cell (a lever, a button etc.). The
+  erase button will allow to remove an object.
+  There are 3 sections than can be expanded :
+  - Tutorial will list all the Cell Objects prefabs in the Tutorial folder.
+  - Sample will list all the Cell Objects prefabs in the CompleteGame folder.
+  - Custom will list any Cell Objects prefabs elsewhere (ones you may have
+  created -- see the section Creating custom Cell and Edge Objects below).
+  Selecting any objects in those section and clicking on a cell will place it
+- Edge Object section :
+  Same as above but for Edge objects.
+
+Creating custom Cell and Edge Objects
+==============================
+
+To create a Cell object, just add a Cell Object component to your objects and
+make a prefab from it. Your object must have its pivot at its center as the
+system will place the object pivot at the center of the cell. If your object
+pivot isn't in the center, you can place it under a parent object that has the
+Cell Object component on it. (Check any prefab in CompleteGame/Prefabs/Objects/Cell
+as they all use that technique to place the objects properly.)
+
+Your prefab will then appear in the Custom part of the Cell Objects section in the Level
+editor. The option "Add Ground Mesh" will tell the system if it needs to add 
+ground mesh under your object (e.g. the key needs one) or not (e.g. the pit
+shouldn't have a ground mesh added to it.)
+
+To create an Edge Object, add an Edge Object component to a GameObject and make
+a prefab out of it. The object pivot needs to be in place so that it would align with the
+"top" edge of a cell, which is 0.5 unit in Z from the center of the cell. Check
+the doors in CompleteGame/Prefabs/Objects/Edge for an example. This is because
+to place an edge object the system places its pivot in the center of the cell and
+rotates it 90, 180 or 270 degree as needed to cover right, bottom, and left edges.
+
+
+Project Limitation and Possible Improvement
+======================================
+
+The project is just a small vertical slice made to support learning and testing
+visual scripting in a full game environment with custom events. This means some
+parts could and should be improved for a full game release.
+
+Undo system
+-----------
+
+The undo system was just added to simplify not having to restart the whole Level
+when a box get stuck in a corner. The undo system just :
+- records each moving object position each turn tick
+- rewinds that position when doing an "undo" action
+
+This means other actions (getting an object, destroying an object, falling in pit
+etc.) aren't recorded and aren't undone (e.g. pushing a box in a pit will destroy
+the MovingObject script so it can't be moved again, so undoing won't move the box
+out of the hole as the MovingObject don't exist anymore so won't be notify of the undo)
+
+This is because some modification (like the pit destroying MovingObject) is done
+purely in Visual Script, without going through the turn system, which can't record
+it.
+

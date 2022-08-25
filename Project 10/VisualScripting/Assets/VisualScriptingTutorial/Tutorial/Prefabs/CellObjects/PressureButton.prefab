@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &530703813902360533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 232879691787653728, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: _data._objectReferences.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: cda51091a1fffd544bcb0c120a62dcfe, type: 2}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2243698097474430217, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7533222989214823781, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7533222989214823781, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8626268822194883736, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"collection":{"$content":[{"name":"Target","value":{"$content":0,"$type":"UnityEngine.Object"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8626268822194883736, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: _data._objectReferences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8626268822194883736, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: _data._objectReferences.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8775514486061288900, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+      propertyPath: m_Name
+      value: PressureButton
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 232879691787653728, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+    - {fileID: 8626268822194883736, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 427f9202fac7b6e4bab83433166f8cac, type: 3}

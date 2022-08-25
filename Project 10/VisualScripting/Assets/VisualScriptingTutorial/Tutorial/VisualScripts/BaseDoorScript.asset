@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: BaseDoorScript
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-239.5,"y":-4.5},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-421.0,"y":-55.0},"guid":"53bf9d26-bbf4-46e9-aa90-c5c785bb4db4","$version":"A","$type":"WantCrossEdgeEvent","$id":"9"},{"chainable":false,"member":{"name":"CancelMovement","parameterTypes":[],"targetType":"VisualScriptingTutorial.MovingObject","targetTypeName":"VisualScriptingTutorial.MovingObject","$version":"A"},"defaultValues":{"target":null},"position":{"x":-94.0,"y":-56.0},"guid":"4bccea42-a47c-4dc9-a3fa-40fb8d24096e","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"bd3e1ff1-438e-45c9-820d-5e6b2784d9ee","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"movingObject","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"4876e81a-244d-422a-b67a-7d695176ec81","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

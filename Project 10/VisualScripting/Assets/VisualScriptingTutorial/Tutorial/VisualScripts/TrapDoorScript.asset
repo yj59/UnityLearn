@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: TrapDoorScript
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-196.5,"y":64.0},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-537.0,"y":-270.0},"guid":"58a5c8d4-7d2d-4be3-af3b-fe339c8a1001","$version":"A","$type":"WantCrossEdgeEvent","$id":"9"},{"chainable":false,"member":{"name":"CancelMovement","parameterTypes":[],"targetType":"VisualScriptingTutorial.MovingObject","targetTypeName":"VisualScriptingTutorial.MovingObject","$version":"A"},"defaultValues":{"target":null},"position":{"x":-233.0,"y":-270.0},"guid":"a893d054-f8b7-46f5-aa39-061065ca2677","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"argumentCount":1,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"LeverSwitched","$type":"System.String"}},"position":{"x":-542.0,"y":16.0},"guid":"abff2ca4-bc27-468d-9fb0-773ff2015f95","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"14"},{"type":"System.String","value":{"$content":"Switched","$type":"System.String"},"defaultValues":{},"position":{"x":-291.0,"y":-51.0},"guid":"acf83712-f49d-4ade-ac27-24ec378d5454","$version":"A","$type":"Unity.VisualScripting.Literal","$id":"16"},{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{},"position":{"x":-65.0,"y":0.0},"guid":"3fc6bd19-bfd8-4fd4-b6cd-4d837bae931a","$version":"A","$type":"Unity.VisualScripting.SubgraphUnit","$id":"18"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"47fc10a3-b770-462d-a880-78409258e887","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"18"},"destinationKey":"Input","guid":"943ff7cb-c49e-4aed-a2a1-83fad49039b0","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"movingObject","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"fab5d7e3-31d7-4f17-a9e6-07550a98be5c","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"output","destinationUnit":{"$ref":"18"},"destinationKey":"Animation
+      Name","guid":"d49f2ca0-6d4a-4d98-8d7c-20aa50704452","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"argument_0","destinationUnit":{"$ref":"18"},"destinationKey":"Animation
+      Value","guid":"369b43b5-0497-4a7f-90b9-664db85d76cc","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 00f20fe84160c87458a005602e76fc9f, type: 2}

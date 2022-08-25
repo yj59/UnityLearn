@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 163e1613e34c0274fa892a444aaff585, type: 3}
+  m_Name: DefaultTheme
+  m_EditorClassIdentifier: 
+  GroundPrefab:
+  - {fileID: 3978516833511601659, guid: 1f9592db56cb8bf4abbbbc6c1ef0a038, type: 3}
+  - {fileID: 3978516833511601659, guid: b2647ade886c3ae41adf0ff966ba0ed6, type: 3}
+  - {fileID: 6432858626561704346, guid: f01aa3b693790394a923bc085106a8cb, type: 3}
+  - {fileID: 6263068918262230654, guid: 6aee1144b641c344eaef46e99efc6d5d, type: 3}
+  WallPrefab:
+  - {fileID: 1800565167874645805, guid: 16cb9df2584047446876ae58b02af79d, type: 3}
+  - {fileID: 1800565167874645805, guid: 0b3a83d17ebaa0d4091e2aeb45fc5e8f, type: 3}
+  InsideWallPrefab:
+  - {fileID: 1800565167874645805, guid: 16cb9df2584047446876ae58b02af79d, type: 3}

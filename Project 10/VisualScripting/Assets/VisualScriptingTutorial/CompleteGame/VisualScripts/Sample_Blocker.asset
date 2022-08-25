@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Sample_Blocker
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":-79.0,"y":-26.0},"zoom":0.8,"elements":[{"coroutine":false,"defaultValues":{"target":null},"position":{"x":-381.0,"y":-134.0},"guid":"30df8577-ab11-4249-9dc3-40f67df3ec99","$version":"A","$type":"WantToEnterCell","$id":"9"},{"chainable":false,"member":{"name":"CancelMovement","parameterTypes":[],"targetType":"VisualScriptingTutorial.MovingObject","targetTypeName":"VisualScriptingTutorial.MovingObject","$version":"A"},"defaultValues":{"target":null},"position":{"x":-36.0,"y":-131.0},"guid":"03db2dbe-9ed3-427b-bdab-f1bc9b155564","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"11"},{"sourceUnit":{"$ref":"9"},"sourceKey":"trigger","destinationUnit":{"$ref":"11"},"destinationKey":"enter","guid":"5846a7e2-6f1f-4dcb-8a44-2baee2d68677","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"9"},"sourceKey":"movingObject","destinationUnit":{"$ref":"11"},"destinationKey":"target","guid":"e12fc27f-feb7-4b40-bd1a-a83caa2e9d92","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
